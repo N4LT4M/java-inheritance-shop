@@ -22,9 +22,15 @@ Nello stesso package aggiungete una classe Main con metodo main nella quale crea
      */
 
 
-        Prodotto p = new Prodotto("samsung", "telefono sopravvalutato", 150, 10);
-        System.out.println(p.getCodice());
 
+        Prodotto p = new Prodotto("samsung", "telefono sopravvalutato", 150, 10);
+
+        String nomeCodice = p.getNomeCodice();
+        double prezzoBase = p.getPrezzo();
+        double prezzoConIva = p.getPrezzoConIva();
+        System.out.println("il prodotto è: " + nomeCodice);
+        System.out.println("il suo prezzo con iva esclusa è: " + prezzoBase);
+        System.out.println("il suo prezzo con iva inclusa è: " + prezzoConIva);
 
     }
 }

@@ -39,7 +39,7 @@ Nello stesso package aggiungete una classe Main con metodo main nella quale crea
 
 
     public Prodotto(String nome, String descrizione, double prezzo, double iva) {
-        this.codice = randomGenerator.nextInt(1,101);// digli tu cosa deve fare, in questo caso generare numero random
+        this.codice = randomGenerator.nextInt(1,100000000);// digli tu cosa deve fare, in questo caso generare numero random
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
@@ -86,14 +86,14 @@ Nello stesso package aggiungete una classe Main con metodo main nella quale crea
     }
 
     //metodo per ottenere prezzo + iva
-    public double getPrezzoIva(){
-        double prezzoIva = prezzo + ((prezzo * iva)/100);
+    public double getPrezzoConIva(){
+        return prezzo + ((prezzo * iva)/100);
 
     }
 
     //metodo per sommare intero codice e stringa nome
-    public String nomeCodice(){
-
+    public String getNomeCodice(){
+        return codice + " - " + nome;
     }
 
 
