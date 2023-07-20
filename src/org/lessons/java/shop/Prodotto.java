@@ -1,2 +1,4 @@
-package org.lessons.java.shop;public class Prodotto {
+package org.lessons.java.shop;
+
+public class Prodotto {
 }
